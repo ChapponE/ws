@@ -26,6 +26,10 @@ jobs:
       with:
         ruby-version: '3.2.2'
         bundler-cache: true
+    - name: Fix permission
+      run: |
+        chmod a+x bin/*
+        git commit -am "add execute permission to bin/deploy"
     - name: Install and Build 🔧
       run: |
         pip3 install --upgrade jupyter
