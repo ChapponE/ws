@@ -16,6 +16,7 @@ permissions:
 
 jobs:
   deploy:
+    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
     - name: Checkout 🛎️
@@ -25,18 +26,6 @@ jobs:
       with:
         ruby-version: '3.2.2'
         bundler-cache: true
-    - name: Fix permission (Linux only)
-      if: runner.os == 'Linux'  # Check if the runner is a Linux-based system
-      run: |
-        chmod a+x bin/*
-    - name: Set Git config
-      run: |
-        git config --global user.email "edouardchappon@gmail.com"
-        git config --global user.name "ChapponE"
-    - name: Commit changes (Linux only)
-      if: runner.os == 'Linux'  # Check if the runner is a Linux-based system
-      run: |
-        git commit -am "add execute permission to bin/deploy"
     - name: Install and Build 🔧
       run: |
         pip3 install --upgrade jupyter
