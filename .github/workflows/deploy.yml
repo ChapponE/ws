@@ -27,8 +27,10 @@ jobs:
         ruby-version: '3.2.2'
         bundler-cache: true
     - name: Fix permission
-      run: |
+            run: |
         chmod a+x bin/*
+        git config --global user.email "${edouardchappon@hotmail.fr}"
+        git config --global user.name "${ChapponE}"
         git commit -am "add execute permission to bin/deploy"
     - name: Install and Build 🔧
       run: |
