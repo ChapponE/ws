@@ -1,74 +1,68 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "nom": "Edouard Chappon",
+    "formations": "Deep learning, statistiques et enseignement",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
+    "email": "edouardchappon@hotmail.fr",
+    "téléphone": "+336.87.35.30.21",
+    "site": "https://chappone.github.io/ws/",
+    "résumé": "Solide formation en mathématiques appliquées via un Master d'apprentissage statistiques. Obtention de l'agrégation de mathématiques (88ème) en 2019. ",
     "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
+  
     ]
   },
   "work": [
+
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "Education Nationale",
+      "position": " Professeur agrégé",
+      "startDate": "09.2020",
+      "endDate": "09.2022",
+      "summary": "Enseignement de mathématiques et Science du Numériques au lycée pendant 2 ans en section générale et en bac professionnel.",
       "highlights": [
-        "Relativity"
+        "Mathématiques, "
       ]
-    }
+      },
+      {
+        "name": "Stage de recherche de 6 mois à l'ENS Lyon",
+        "position": "Stage de deep learning et traitement du signal",
+        "startDate": "04.2023",
+        "endDate": "10.2023",
+        "summary": "Travail de recherche au laboratoire de physique de l'ENS sur la recontruction d'images d'environnements circumstellaires par apprentissage profond.",
+        "highlights": [
+          "Machine learning, traitement du signal, Pytorch"
+        ]
+      }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "institution": "Université Claude Bernard, Lyon 1",
+      "url": "https://math.univ-lyon1.fr/master-mathematiques-et-applications/?page_id=2",
+      "area": "",
+      "studyType": "Master de mathématiques générales, préparation à l'agrégation",
+      "startDate": "01.2018",
+      "endDate": "06.2019",
       "score": "",
       "courses": [
-        "Theory of Relativity"
+        "Théorie des groupes, analyse fonctionnelle, analyse numérique, probabilités, algèbre linéaire ... "
       ]
     }
   ],
   "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
+    
   ],
   "certificates": [],
   "publications": [],
   "skills": [],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker"
+      "language": "Français",
+      "fluency": "langue maternelle"
     },
     {
-      "language": "English",
-      "fluency": "Fluent"
+      "language": "Anglais",
+      "fluency": "C1"
     }
   ],
   "interests": [],

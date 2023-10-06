@@ -12,48 +12,54 @@ layout: default
         </header>
 
         <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
+
+          <div style="display: flex; flex-wrap: wrap; align-items: flex-start;">
+            <div class="content" style="flex-grow: 1; padding-left: 20px;"> <!-- Adjust padding as needed -->
+            {% if page.profile -%}
+            <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+              {%- if page.profile.image %}
               {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-
+        
               {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+              {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
               {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+              {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
               {% endif %}
-
+        
               {% include figure.html
               path=profile_image_path
               class=profile_image_class
               alt=page.profile.image
               cache_bust=true -%}
-            {% endif -%}
-            {%- if page.profile.more_info %}
-            <div class="more-info">
-              <div class="more-info", style="width: max-content;">
+              {% endif -%}
+              {%- if page.profile.more_info %}
+              <div class="more-info" style="display: flex; flex-direction: column; align-items: flex-start; width: max-content;">
                 <ul class="theme-list">
                   <li><b>Vit à: </b> Lyon, (Fr)</li>
                   <li><b>Age:</b> 27 ans</li>
                   <li><b>Mail: </b> edouardchappon@hotmail.fr</li>
-                  <li><b>Téléphone: </b> +33687353021</li>
+                  <li><b>Téléphone: </b> +336.87.35.30.21</li>
                 </ul>
               </div>
+              {%- endif %}
             </div>
             {%- endif %}
-          </div>
-          {%- endif %}
+        
 
-          <div style="text-align: justify; font-size: large;">
-            {{ content }}
+              <div style="text-align: justify; font-size: large;">
+                {{ content }}
+              </div>
+        
+              <!-- News -->
+              {% if page.news and site.announcements.enabled -%}
+              <div style=""> <!-- Adjust margin as needed -->
+                <br> <br> <br> <br><br> <br>
+                <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
+                {%- include news.html limit=true %}
+              </div>
+              {%- endif %}
+            </div>
           </div>
-
-          
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
-          {%- endif %}
 
           <!-- Latest posts -->
           {% if page.latest_posts -%}
