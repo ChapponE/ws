@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dossier Professionnel Réflexif
-description: Mémoire réalisé dans le cadre d'un Diplôme Universitaire, Enseignement, Education et Formation, effectué durant l'année de stage de titularisation en tant qu'enseignant agrégé de l'Education Nationale.
+description: Mémoire réalisé dans le cadre d'un Diplôme Universitaire, effectué durant l'année de stage de titularisation en tant qu'enseignant de l'Education Nationale.
 img: assets/img/12.jpg
 importance: 1000
 category: work
