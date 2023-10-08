@@ -40,6 +40,7 @@ layout: default
                   <li><b>Mail: </b> edouardchappon@hotmail.fr</li>
                   <li><b>Téléphone: </b> +336.87.35.30.21</li>
                 </ul>
+                <h1 class="post-title"><a href="{{CV.pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><button class="btn btn-theme btn-rounded">Télécharger CV</button></a></h1>
               </div>
               {%- endif %}
             </div>
@@ -50,28 +51,14 @@ layout: default
                 {{ content }}
               </div>
         
-              <!-- News -->
-              {% if page.news and site.announcements.enabled -%}
+              <!-- latest posts -->
               <div style=""> <!-- Adjust margin as needed -->
-                <br> <br> <br> <br><br> <br>
-                <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
-                {%- include news.html limit=true %}
+                <br> <br> <br> <br><br> <br><br> <br>
+                <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
               </div>
-              {%- endif %}
+              {%- include latest_posts.html %}
             </div>
           </div>
-
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
-
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-            {%- include selected_papers.html %}
-          {%- endif %}
 
           <!-- Social -->
           {%- if page.social %}
