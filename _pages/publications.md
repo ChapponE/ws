@@ -25,7 +25,7 @@ nav_order: 1
           </table>
         </div>
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-          <h6 class="title font-weight-bold ml-1 ml-md-4"><a href="/assets/pdf/example_pdf.pdf">Studying circumstellar environments with deep learning for high-contrast imagery reconstruction</a></h6>
+          <h6 class="title font-weight-bold ml-1 ml-md-4"><a href="/assets/pdf/circumstellar.pdf">Studying circumstellar environments with deep learning for high-contrast imagery reconstruction</a></h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Edouard Chappon</h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">The study and direct observation of circumstellar environments are crucial for improving our understanding of exoplanets and unraveling the intricate processes underlying the formation of stellar systems. Direct observation is a challenge, due to the very high contrast between these environments and their host stars. Thanks to the polarimetric imaging methods and the Very Large Telescope it is possible to acquire images of circumstellar environments. The acquired images are blurred and noise by effect of the instruments. The objective of this internship is to reconstruct the true images from the degraded ones by using the inverse problem formalism. To tackle this problem, a model called RHAPSODIE already exists and use the classical variational methods. This internship aimed to enhance the results from RHAPSODIE by leveraging the physics of iterative methods and the recent improvements in deep learning to learn the prior of the variational problem.</h6>
         </div>
