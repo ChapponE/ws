@@ -42,9 +42,7 @@ layout: default
   <article class="post-content">
     {% if page.toc and page.toc.beginning %}
     <div id="table-of-contents">
-      {% comment %}
       {% toc %}
-      {% endcomment %}
     </div>
     <hr>
     {% endif %}
@@ -57,10 +55,7 @@ layout: default
   {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
   <h2>References</h2>
   <div class="publications">
-    {% comment %}
     {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
-    {% endcomment %}
-    
   </div>
   {%- endif %}
 
@@ -73,7 +68,7 @@ layout: default
   {%- if site.disqus_shortname and page.disqus_comments -%}
     {% include disqus.html %}
   {%- endif %}
-  {%- if site.giscus.repo and page.giscus_comments -%}
+  {%- if site.giscus and page.giscus_comments -%}
     {% include giscus.html %}
   {%- endif -%}
 
