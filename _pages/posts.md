@@ -19,7 +19,7 @@ nav_order: 1
                   <tr>
                   <img src="{{'sample.png' | prepend: 'assets/img/' | relative_url}}" alt="A sample image" width="140">
                     <td>
-                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 140px;">2023</span>
+                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 140px;">10/2023</span>
                     </td>
                   </tr>
                 </tbody>
