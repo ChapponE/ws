@@ -32,6 +32,29 @@ nav_order: 1
             </div>
           </div>
         </li>
+
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <table class="table-cv">
+                <tbody>
+                  <tr>
+                  <img src="{{'OT_preview.PNG' | prepend: 'assets/img/' | relative_url}}" alt="A sample image" width="140">
+                    <td>
+                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 140px;">11/2023</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+              <h6 class="title font-weight-bold ml-1 ml-md-4"><a href="{{ 'color_transport' | prepend: '/blog/2023/' | relative_url }}">Colour transfert with optimal transport method</a></h6>
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Edouard Chappon</h6>
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">This project aims to match the color palette of an original image with that of a target image. It was developed as part of a practical assignment in an optimal transport class. </h6>
+            </div>
+          </div>
+        </li>
+
       </ul>
     <hr>
     </div>

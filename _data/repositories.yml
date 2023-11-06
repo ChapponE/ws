@@ -4,6 +4,7 @@ github_users:
 github_repos:
   - ChapponE/ws
   - ChapponE/img_deblur
+  - ChapponE/optimal_transport_color_transfer
   - ChapponE/musiccreia
   - deepinv/deepinv
   
