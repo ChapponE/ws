@@ -10,25 +10,25 @@ nav_order: 1
 <!-- _pages/publications.md -->
 <div class="publications">
 
-    <ul class="card-text font-weight-light list-group list-group-flush">
+    <ul class="card-text font-weight-light list-group list-group-flush" >
+
         <li class="list-group-item">
-          <div class="row">
+          <div class="row" >
             <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
               <table class="table-cv">
                 <tbody>
                   <tr>
                   <img src="{{'sample.png' | prepend: 'assets/img/' | relative_url}}" alt="A sample image" width="140">
                     <td>
-                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 140px;">10/2023</span>
+                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 140px;">12/2023</span>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-              <h6 class="title font-weight-bold ml-1 ml-md-4"><a href="{{ 'mat' | prepend: '/blog/2023/' | relative_url }}">Unfolded neural network for deblur and denoise</a></h6>
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Edouard Chappon</h6>
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">This project aims to deblur and denoise images, with a focus on the MNIST dataset. The methodology is based on the "Unfolded Forward Backward" approach, developed as part of my master's thesis project at ENS Lyon.</h6>
+              <h6 class="title font-weight-bold ml-1 ml-md-4"><a href="{{ 'lista' | prepend: '/blog/2023/' | relative_url }}">Origins of unfolded networks and theory: Learning Iterative Soft Thresholding Algorithm (LISTA)</a></h6>
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">This project aims to implement the first unfolded neural network described in "Learning fast approximations of sparse coding" and 3 variants of it introduced in the article "Theoretical Linear Convergence of Unfolded ISTA and its Practical Weights and Thresholds" which gives theoritical guarantees of convergence. </h6>
             </div>
           </div>
         </li>
@@ -49,8 +49,30 @@ nav_order: 1
             </div>
             <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
               <h6 class="title font-weight-bold ml-1 ml-md-4"><a href="{{ 'color_transport' | prepend: '/blog/2023/' | relative_url }}">Colour transfert with optimal transport method</a></h6>
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Edouard Chappon</h6>
+              
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">This project aims to match the color palette of an original image with that of a target image. It was developed as part of a practical assignment in an optimal transport class. </h6>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <table class="table-cv">
+                <tbody>
+                  <tr>
+                  <img src="{{'sample.png' | prepend: 'assets/img/' | relative_url}}" alt="A sample image" width="140">
+                    <td>
+                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 140px;">10/2023</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+              <h6 class="title font-weight-bold ml-1 ml-md-4"><a href="{{ 'mat' | prepend: '/blog/2023/' | relative_url }}">Unfolded neural network for deblur and denoise</a></h6>
+
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">This project aims to deblur and denoise images, with a focus on the MNIST dataset. The methodology is based on the "Unfolded Forward Backward" approach, developed as part of my master's thesis project at ENS Lyon.</h6>
             </div>
           </div>
         </li>

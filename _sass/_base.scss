@@ -600,6 +600,10 @@ footer.sticky-bottom {
     }
   }
 
+  ul, li {
+    background-color: var(--global-bg-color);
+  }
+
   h2.bibliography {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);

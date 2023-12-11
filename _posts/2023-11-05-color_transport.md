@@ -27,7 +27,7 @@ This calculate the Wasserstein Distance  using the projected vectors in a certai
 <h2><u>Barycenter in Wasserstain Space</u></h2>
 Here we define the barycenter in this space and  provide an algorithm to obtain the barycenter of the image we want to transport, weighted at 0, and the image with the desired colormap, weighted at 1. \\
 By analogy with the barycenter in Euclidean space, the barycenter in $$(\mathcal{M}, \tilde{W})$$ is defined as :\\
-$$\operatorname{Bar}\left(\lambda_{j}, Y^{j}\right)_{j \in J} \in \underset{X}{\operatorname{argmin}} E(X)$$ where $$E=\sum_{j \in J} \lambda_{j} \tilde{W}\left(X_\theta, Y_\theta^{j}\right)^{2}=\int_{\theta \in S^2}{\sum\limits_{j \in J}}\lambda_j  \left\langle X_{i}-Y_{\sigma^*_{\theta}(i)}, \theta\right\rangle^{2} \mathrm{~d} \theta$$\\
+$$\operatorname{Bar}\left(\lambda_{j}, Y^{j}\right)_{j \in J} \in \underset{X}{\operatorname{argmin}} E(X)$$ where $$E(X)={\sum\limits_{j \in J}}\lambda_{j} \tilde{W}\left(X_\theta, Y_\theta^{j}\right)^{2}=\int_{\theta \in S^2}{\sum\limits_{j \in J}}\lambda_j  \left\langle X_{i}-Y_{\sigma^*_{\theta}(i)}, \theta\right\rangle^{2} \mathrm{~d} \theta$$\\
 With $$X_\theta=\{<X_i,\theta>\}_{i\in[1,N]}\subset \mathbb{R}$$ and the $$\sigma^*_\theta$$ defined in Wasserstein Distance part. 
 
 <h2><u>The transportation algorithm:</u></h2>
@@ -50,7 +50,11 @@ $$\quad \quad X^{k}=X^{k}-\epsilon\nabla W(X^{k}_\theta, Y_\theta)$$ with $$\the
 <h2><u>Results</u></h2>
 Here are the results obtained by applying the algorithm with 100 iterations and $$\epsilon=1$$ to transport the first image, $$X$$, to the colormap of the 5 other images, denoted as $$Y$$:
 
-<img src="{{'Transported_images.png' | prepend: 'assets/img/' | relative_url}}" alt="A sample image" width="1300" style="margin-left: -300px;">
+<img src="{{'Transported_images.png' | prepend: 'assets/img/' | relative_url}}"
+     alt="A sample image"
+     style="width: 100%; height: auto; margin: 0; position: absolute; left: 0;">
+
+<h2>$$\;$$</h2> <h2>$$\;$$</h2> <h2>$$\;$$</h2> <h2>$$\;$$</h2> <h2>$$\;$$</h2> <h2>$$\;$$</h2> <h2>$$\;$$</h2>
 
 
 
