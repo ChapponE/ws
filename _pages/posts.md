@@ -27,7 +27,7 @@ nav_order: 1
             </div>
             <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
               <h6 class="title font-weight-bold ml-1 ml-md-4"><a href="{{ 'bot' | prepend: '/blog/2024/' | relative_url }}">Discord bot</a></h6>
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">This post presents my first Discord bot, which serves to remind users of events scheduled for the upcoming week and automatically updates the weekly message. </h6>
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">This post presents my first Discord bot designed to remind users of upcoming events throughout the week while automatically updating the weekly message. </h6>
             </div>
           </div>
         </li>
