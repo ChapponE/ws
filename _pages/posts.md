@@ -17,7 +17,7 @@ nav_order: 1
               <table class="table-cv">
                 <tbody>
                   <tr>
-                  <img src="{{'event_bot.PNG' | prepend: 'assets/img/' | relative_url}}" alt="A sample image" width="140">
+                  <img src="{{'event_bot.png' | prepend: 'assets/img/' | relative_url}}" alt="A sample image" width="140">
                     <td>
                       <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 140px;">01/2024</span>
                     </td>
