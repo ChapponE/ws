@@ -11,6 +11,27 @@ nav_order: 1
 <div class="publications">
 
     <ul class="card-text font-weight-light list-group list-group-flush" >
+      <li class="list-group-item">
+          <div class="row" >
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <table class="table-cv">
+                <tbody>
+                  <tr>
+                  <img src="{{'event_bot.PNG' | prepend: 'assets/img/' | relative_url}}" alt="A sample image" width="140">
+                    <td>
+                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 140px;">01/2024</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+              <h6 class="title font-weight-bold ml-1 ml-md-4"><a href="{{ 'bot' | prepend: '/blog/2024/' | relative_url }}">Discord bot</a></h6>
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">This post presents my first Discord bot, which serves to remind users of events scheduled for the upcoming week and automatically updates the weekly message. </h6>
+            </div>
+          </div>
+        </li>
+
 
         <li class="list-group-item">
           <div class="row" >
