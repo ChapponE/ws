@@ -53,11 +53,28 @@ layout: default
               </div>
         
               <!-- latest posts -->
-              <div style=""> <!-- Adjust margin as needed -->
+              <div style="margin-top: 50px;"> <!-- Adjust margin as needed -->
                 <br> <br> <br> <br><br> <br><br> <br>
-                <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
+                <h2><a href="{{ '/blog/' | relative_url }}">latest posts</a></h2>
+                {%- include latest_posts.html %}
               </div>
-              {%- include latest_posts.html %}
+            </div>
+          </div>
+          <br> <br> <br>
+          <div style=""> <!-- Adjust margin as needed -->
+            <h2 style="margin-left: 20px;"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">latest Publications</a></h2>
+            <div style="margin-left: 20px;" class="news">
+              <div class="table-responsive" {% if site.latest_posts.scrollable and latest_posts_size > 3 %}style="max-height: 60vw"{% endif %}>
+                <table class="table table-sm table-borderless">
+                  <tr>
+                    <th scope="row" style="width: 120px;">Mai 9, 2024</th>
+                    <td>
+                        <a class="news-title" href="{{ 'rhapsodie_PNN.pdf' | prepend: '/assets/pdf/' | relative_url }}">From linear to nonlinear unfolded Condat-Vũ algorithm
+                          for spectro-polarimetric hight-constrast image recovery</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
 
