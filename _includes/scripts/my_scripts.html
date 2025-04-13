@@ -1,0 +1,29 @@
+<script>
+    function calculateAge() {
+        const birthDate = new Date('1995-12-28');
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        let month = today.getMonth() - birthDate.getMonth();
+
+        if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+
+        return age;
+    }
+
+    // Wait for the HTML document to be fully loaded before running the script
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const age = calculateAge();
+        const ageElement = document.getElementById('age');
+        // Check if the element exists before trying to update it
+        if (ageElement) {
+            ageElement.innerHTML = '<b>Age:</b> ' + age + ' ans';
+        } else {
+            console.error("Element with ID 'age' not found.");
+        }
+    });
+
+</script>
+
+

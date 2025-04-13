@@ -35,8 +35,7 @@ layout: default
               {%- if page.profile.more_info %}
               <div class="more-info" style="display: flex; flex-direction: column; align-items: flex-start; width: max-content;">
                 <ul class="theme-list">
-                  <li><b>Vit à: </b> Lyon, (Fr)</li>
-                  <li><b>Age:</b> 27 ans</li>
+                  
                   <li><b>Mail: </b> edouardchappon@hotmail.fr</li>
                   <li><b>Téléphone: </b> +336.87.35.30.21</li>
                 </ul>
@@ -50,11 +49,29 @@ layout: default
               <div style="text-align: justify; font-size: large;">
                 {{ content }}
               </div>
-        
+          
+          <br>
+
+          <!-- Social -->
+          {%- if page.social %}
+          <div class="social">
+            <div class="contact-icons">
+              {% include social.html %}
+            </div>
+
+            <div class="contact-note">
+              {{ site.contact_note }}
+            </div>
+
+          </div>
+        {%- endif %}
+
               <!-- latest posts -->
               <div style="margin-top: 50px;"> <!-- Adjust margin as needed -->
-                <br> <br> <br> <br><br> <br><br> <br>
+
+                <br>
                 <h2><a href="{{ '/blog/' | relative_url }}">latest posts</a></h2>
+                <br> <br>
                 {%- include latest_posts.html %}
               </div>
             </div>
@@ -77,19 +94,6 @@ layout: default
             </div>
           </div>
 
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
-          {%- endif %}
         </article>
 
 </div>
